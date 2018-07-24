@@ -251,7 +251,7 @@ if (message.content.startsWith(PREFIX + 'setavatar')) {
 }
 });
 
-let prefix = '6';
+let prefix = '5';
 
 client.on('message', msg => {
 	if (msg.content.startsWith(prefix + 'help')) {
@@ -292,7 +292,7 @@ client.on('message', message => {
 })
 
 client.on('ready', () => {
- user.setActivity("5help",{type: 'LISTENING'});
+     client.user.setActivity("5help",{type: 'LISTENING'});
 
 });
 
