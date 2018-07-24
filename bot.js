@@ -146,7 +146,7 @@ client.on('message', function (message) {
         var server = server = servers[message.guild.id];
         if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
     }
-    else if (mess.startsWith(prefix + 'ادخل')) {
+    else if (mess.startsWith(prefix + 'تعال')) {
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **يجب ان تكون في روم صوتي**');
         message.member.voiceChannel.join().then(message.channel.send(':ok:'));
     }
@@ -466,7 +466,7 @@ client.on('message', message => {
      خروج البوت من الروم
      prefix = ${prefix}
      ping = ${Date.now() - message.createdTimestamp}ms
-     for help = <@426471752877604874>
+     for help = <@426471752877604874> <@452191687159185409>
      By ME™  `)
 
       message.author.send({embed});
