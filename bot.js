@@ -337,7 +337,7 @@ client.on('message', function (message) {
             dispatcher.pause();
         });
     }
-    else if (mess.startsWith(prefix + 'ruseme')) {
+    else if (mess.startsWith(prefix + 'rusume')) {
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || ** Must BE at a voice channel**');
         message.channel.send(':ok:').then(() => {
             dispatcher.resume();
